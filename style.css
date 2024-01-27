@@ -1,0 +1,167 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    display: block;
+    box-sizing: border-box;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: rgb(50, 50, 50);
+    color: rgb(253, 244, 220);
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    display: inline-block;
+    height: fit-content;
+}
+
+header nav {
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    width: 100%;
+    display: block;
+    float: left;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    font-size: 150%;
+}
+
+header nav div.current-page {
+    margin: 0%;
+    padding: 10px;
+    position: relative;
+    width: fit-content;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: inline-block;
+}
+
+header nav a {
+    display: inline-block;
+    height: fit-content;
+    width: fit-content;
+}
+
+header nav a div {
+    margin: 0%;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    display: inline-block;
+}
+
+header nav a div:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+header nav a:visited {
+    color: rgb(253, 244, 220);
+    background-color: transparent;
+}
+
+a:link {
+    color: rgb(253, 244, 220);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(128, 128, 128);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(0, 0, 255);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(211, 211, 211);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+div.profile-picture {
+    height: 200px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+div.profile-picture a {
+    display: block;
+    border-radius: 50%;
+    padding: 0%;
+    margin: 0%;
+    height: 200px;
+    width: 200px;
+}
+
+div.profile-picture img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+div.profile-picture#display img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    max-height: 500px;
+    border-radius: 0%;
+}
+
+@media only screen and (max-height: 500px) and (orientation: landscape) {
+    div.profile-picture#display img {
+        width: auto;
+        height: 100%;
+    }
+}
+
+div.home-button button {
+    background-color: rgb(0, 0, 255);
+    color: rgb(253, 244, 220);
+    border-radius: 10%;
+}
+
+footer {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0%;
+    padding: 10px;
+    height: fit-content;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: monospace, sans-serif;
+    font-size: 100%;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    footer {
+        position: relative;
+        bottom: 0;
+    }
+}
